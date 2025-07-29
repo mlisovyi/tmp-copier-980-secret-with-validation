@@ -5,4 +5,5 @@ secret_token:
   type: str
   help: "Enter your secret token"
   secret: true
+  default: 
   validator: "{% if not secret_token.strip() %}Secret token cannot be empty.{% endif %}"
