@@ -1,0 +1,8 @@
+_subdirectory: .
+_answers_file: .copier-answers.yml
+
+secret_token:
+  type: str
+  help: "Enter your secret token"
+  secret: true
+  validator: "{% if not secret_token.strip() %}Secret token cannot be empty.{% endif %}"
